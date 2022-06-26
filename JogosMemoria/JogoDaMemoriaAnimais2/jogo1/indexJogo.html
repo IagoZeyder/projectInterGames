@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Jogo da Memória</title>
+
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>        
+        <nav  >
+            <h1  id="nomeJogo" onmousemove="aumentarOpacity()">Jogo da Memoria</h1>
+        </nav>        
+            <p id="temaJogo"> Tema: Animais </p>
+            <p id="apoio"> Acertos: </p>  
+            <button id="botaoVoltar" onclick="voltarInicio()"> Inicio </button>
+        <section class="jogo-memoria" onmousemove="diminuirOpacity()">
+            <div class="carta-memoria" data-framework="aurelia">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/MACACO.svg" alt="Macaco" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="aurelia">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/MACACO.svg" alt="Macaco" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="JS Badge" />
+            </div>
+
+            <div class="carta-memoria" data-framework="vue">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/FORMIGA.svg" alt="Formiga" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="vue">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/FORMIGA.svg" alt="Formiga" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="angular">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/RATO.svg" alt="Rato" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="angular">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/RATO.svg" alt="Rato" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="ember">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/GIRAFA.svg" alt="Girafa" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="ember">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/GIRAFA.svg" alt="Girafa" />                
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />                
+            </div>
+
+            <div class="carta-memoria" data-framework="backbone">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/SAPO.svg" alt="Sato" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="backbone">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/SAPO.svg" alt="Sapo" />
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>
+
+            <div class="carta-memoria" data-framework="react">
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/VACA.svg" alt="Vaca" />                
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="JS Badge" />
+                
+            </div>
+
+            <div class="carta-memoria" data-framework="react">                    
+                <img class="carta-frontal" src="PEÇAS_MEMORIA_SVG/VACA.svg" alt="Vaca"  />                
+                <img class="carta-traseira" src="PEÇAS_MEMORIA_SVG/FUNDO_SVG.svg" alt="Desvendar carta" />
+            </div>            
+
+        </section>
+
+        <script src="scriptsMemory.js"></script> 
+        
+        
+    </body>
+</html>

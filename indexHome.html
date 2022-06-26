@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body onmousemove="startTimer()">
+    
+    <nav>        
+        <!-- Navbar do ambiente-->
+        <div class="navbar">
+            <div id="nomeSite"> 
+                <img src="logo_InterJogos.svg" id="logo" alt=""> 
+                |  <!-- SOBRE -->
+            </div>
+            <p class="sobre" id="sobreJogo"> Sobre o Jogo </p>            
+        </div>
+    </nav>
+    
+    <!-- section do ambiente-->
+    <section>
+        <!-- fundo/background do ambiente-->
+        <div class="background">
+            <!-- itens para jogar no ambiente-->
+            <div class="itens">
+                <div class="game" id="i">
+                    <img src="img/seta left-depositphotos-bgremover.png" alt="" id="seta" onclick="trocarJogo()">
+                    <img src="img/logo puzzle-depositphotos-bgremover.png" class="img1" id="imagensJogos" alt=""
+                        onmousemove=" explicaaorJogo()" onmouseleave="fecharExplicacao() " onclick="definirJogo()" >
+                    <img src="img/seta right-depositphotos-bgremover.png" alt="" id="seta" onclick="trocarJogo()"
+                        class="pointRight">
+                     <p id="descricao"> </p>
+                     <div class="tracado">
+
+                    </div>
+                </div>
+                <div id="i" class="text">
+                    <form action="index.php" method="get">
+                        <input class="field" type="text" id="textNome" name="username" alt="Digite seu nome" placeholder="Digite seu nome">
+                    </a>
+                </div>
+                <input type="button" value="Jogar" id="jogar" onclick="jogar()">
+
+            </div>
+
+        </div>
+    </section>
+    <script src="scriptHome.js"></script>
+    <script src="scriptsMemory.js"></script> 
+    
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(19, 113, 147);
+    color: white;
+  }
+  .center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+  }
+  .loader {
+    margin-left: 10%;
+    width: 80px;
+    height: 80px;
+    border: 9px solid #121213;
+    border-left-color: #c9d6c9;
+    border-radius: 100%;
+    animation: loader 1s linear infinite;
+  }
+  
+  @keyframes loader {
+  
+    to {
+  
+      transform: rotate(360deg);
+    }
+  }
