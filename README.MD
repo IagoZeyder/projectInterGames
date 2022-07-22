@@ -1,1 +1,2 @@
-<h1 align="center">InterJogos</h1>
+<h1 color="blue" align="center">InterJogos</h1>
+
