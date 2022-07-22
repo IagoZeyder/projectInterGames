@@ -1,3 +1,1 @@
-Utilizando GIT no interJogos
-
-Segundo comentário
+<h1 align="center">InterJogos</h1>
